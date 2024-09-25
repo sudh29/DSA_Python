@@ -12,7 +12,7 @@
 
 [6 Binary Trees](https://github.com/sudh29/Binary-Tree/blob/main/README.md)
 
-[7 BST](https://github.com/sudh29/BST)
+[7 BST](https://github.com/sudh29/BST/new/main?filename=README.md)
 
 [8 Greedy](https://github.com/sudh29/Greedy/blob/main/README.md)
 
