@@ -26,6 +26,6 @@
 
 [13 Trie](https://github.com/sudh29/Trie/blob/main/README.md)
 
-[14 Dynamic Programming](0_Coin_Change.py)
+[14 Dynamic Programming](https://github.com/sudh29/Dynamic-Programming/blob/main/README.md)
 
-[15 Bit Manipulation](0_Coin_Change.py)
+[15 Bit Manipulation](https://github.com/sudh29/Bit-Manipulation/blob/main/README.md)
