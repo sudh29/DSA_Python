@@ -19,7 +19,7 @@
 
 [9 BackTracking](https://github.com/sudh29/Backtracking/blob/main/README.md)
 
-[10 Stacks & Queues](https://github.com/sudh29/Stack-Queues/new/main?filename=README.md)
+[10 Stacks & Queues](https://github.com/sudh29/Stack-Queues/blob/main/README.md)
 
 [11 Heap](https://github.com/sudh29/Heap/blob/main/README.md)
 
