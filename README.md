@@ -20,7 +20,7 @@
 
 [10 Stacks & Queues](0_Coin_Change.py)
 
-[11 Heap](0_Coin_Change.py)
+[11 Heap](https://github.com/sudh29/Heap/blob/main/README.md)
 
 [12 Graph](https://github.com/sudh29/graph_/blob/main/README.md)
 
