@@ -1,6 +1,6 @@
 # DSA_Python
 
-[1 Array](../Array/blob/main/README.md))
+[1 Array](../Array/blob/main/README.md)
 
 [2 Matrix](0_Coin_Change.py)
 
