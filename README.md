@@ -22,7 +22,7 @@
 
 [11 Heap](0_Coin_Change.py)
 
-[12 Graph](0_Coin_Change.py)
+[12 Graph](https://github.com/sudh29/graph_/blob/main/README.md)
 
 [13 Trie](https://github.com/sudh29/Trie/blob/main/README.md)
 
