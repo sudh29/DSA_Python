@@ -4,7 +4,7 @@
 
 [2 Matrix](https://github.com/sudh29/Matrix/blob/main/README.md)
 
-[3 String](0_Coin_Change.py)
+[3 String](https://github.com/sudh29/StringAlgorithms/blob/main/README.md)
 
 [4 Search & Sort](0_Coin_Change.py)
 
