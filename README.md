@@ -4,16 +4,28 @@
 
 [2 Matrix](0_Coin_Change.py)
 
-[3 Coin Change](0_Coin_Change.py)
+[3 String](0_Coin_Change.py)
 
-[0 Coin Change](0_Coin_Change.py)
+[4 Search & Sort](0_Coin_Change.py)
 
-[0 Coin Change](0_Coin_Change.py)
+[5 Linked List](0_Coin_Change.py)
 
-[0 Coin Change](0_Coin_Change.py)
+[6 Binary Trees](0_Coin_Change.py)
 
-[0 Coin Change](0_Coin_Change.py)
+[7 BST](0_Coin_Change.py)
 
-[0 Coin Change](0_Coin_Change.py)
+[8 Greedy](0_Coin_Change.py)
 
-[0 Coin Change](0_Coin_Change.py)
+[9 BackTracking](0_Coin_Change.py)
+
+[10 Stacks & Queues](0_Coin_Change.py)
+
+[11 Heap](0_Coin_Change.py)
+
+[12 Graph](0_Coin_Change.py)
+
+[13 Trie](0_Coin_Change.py)
+
+[14 Dynamic Programming](0_Coin_Change.py)
+
+[15 Bit Manipulation](0_Coin_Change.py)
