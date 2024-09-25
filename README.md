@@ -6,7 +6,7 @@
 
 [3 String](https://github.com/sudh29/StringAlgorithms/blob/main/README.md)
 
-[4 Search & Sort](0_Coin_Change.py)
+[4 Search & Sort](https://github.com/sudh29/Search-Sort/edit/main/README.md)
 
 [5 Linked List](https://github.com/sudh29/LinkList/blob/main/README.md)
 
