@@ -14,7 +14,7 @@
 
 [7 BST](0_Coin_Change.py)
 
-[8 Greedy](0_Coin_Change.py)
+[8 Greedy](https://github.com/sudh29/Greedy/blob/main/README.md)
 
 [9 BackTracking](https://github.com/sudh29/Backtracking/blob/main/README.md)
 
