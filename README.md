@@ -1,8 +1,8 @@
 # DSA_Python
 
-[1 Array](../Array/blob/main/README.md)
+[1 Array](https://github.com/sudh29/Array/blob/main/README.md)
 
-[2 Matrix](0_Coin_Change.py)
+[2 Matrix](https://github.com/sudh29/Matrix/blob/main/README.md)
 
 [3 String](0_Coin_Change.py)
 
