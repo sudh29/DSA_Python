@@ -10,7 +10,7 @@
 
 [5 Linked List](0_Coin_Change.py)
 
-[6 Binary Trees](0_Coin_Change.py)
+[6 Binary Trees](https://github.com/sudh29/Binary-Tree/blob/main/README.md)
 
 [7 BST](0_Coin_Change.py)
 
