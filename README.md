@@ -24,7 +24,7 @@
 
 [12 Graph](0_Coin_Change.py)
 
-[13 Trie](0_Coin_Change.py)
+[13 Trie](https://github.com/sudh29/Trie/blob/main/README.md)
 
 [14 Dynamic Programming](0_Coin_Change.py)
 
