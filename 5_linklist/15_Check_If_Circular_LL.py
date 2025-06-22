@@ -1,9 +1,9 @@
 def isCircular(head):
-    if head==None:
+    if head == None:
         return True
-    curr=head
-    while curr :
-        if curr.next==head:
+    curr = head
+    while curr:
+        if curr.next == head:
             return True
-        curr=curr.next
+        curr = curr.next
     return False

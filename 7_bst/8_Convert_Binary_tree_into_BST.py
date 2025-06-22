@@ -1,11 +1,13 @@
-'''
+"""
 # Tree Node
 class Node:
     def __init__(self, val):
         self.right = None
         self.data = val
         self.left = None
-'''
+"""
+
+
 class Solution:
     def binaryTreeToBST(self, root):
         def inorder_traversal(node):
@@ -24,8 +26,8 @@ class Solution:
 
         values = []
         inorder_traversal(root)
-    
+
         values.sort()
-    
+
         index = 0
         convert_to_bst(root)

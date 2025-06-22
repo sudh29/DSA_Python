@@ -1,7 +1,7 @@
 #User function Template for python3
 
 class Solution:
-	
+
 	def findMaxSum(self,arr, n):
 		if n == 0:
             return 0
@@ -19,7 +19,7 @@ class Solution:
             dp[i] = max(dp[i-1], dp[i-2] + arr[i], dp[i-3] + arr[i] + arr[i-1])
         return dp[-1]
 
-#{ 
+#{
  # Driver Code Starts
 #Initial Template for Python 3
 

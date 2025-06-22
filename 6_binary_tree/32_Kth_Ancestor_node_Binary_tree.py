@@ -1,7 +1,7 @@
 ancestors = []
 
-def kthAncestor(root,k, node_value):
-    
+
+def kthAncestor(root, k, node_value):
     def dfs(node, target, path):
         global ancestors
         if not node:
@@ -12,7 +12,7 @@ def kthAncestor(root,k, node_value):
         dfs(node.left, target, path)
         dfs(node.right, target, path)
         path.pop()
-        
+
     path_val = []
     dfs(root, node_value, path_val)
     # print(ancestors)

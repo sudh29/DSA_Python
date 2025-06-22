@@ -1,7 +1,7 @@
 def find(arr, n, x):
     start = 0
     end = n - 1  # Adjusted for zero-based indexing in Python
-    temp = float('inf')
+    temp = float("inf")
     res = []
 
     while start <= end:
@@ -14,7 +14,7 @@ def find(arr, n, x):
         else:
             start = mid + 1
 
-    if temp == float('inf'):
+    if temp == float("inf"):
         return [-1, -1]
 
     i = temp

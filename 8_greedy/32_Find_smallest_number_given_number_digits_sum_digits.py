@@ -5,7 +5,7 @@ class Solution:
         ans = [0 for i in range(D)]
         for i in range(D-1,-1,-1):
             if S>9:
-                ans[i] = '9' 
+                ans[i] = '9'
                 S-=9
             else:
                 if i==0:
@@ -19,16 +19,16 @@ class Solution:
                     ans[i] = '1'
                     break
         return ''.join(ans)
-        
-        
-        
-        
 
 
 
-#{ 
+
+
+
+
+#{
  # Driver Code Starts
 #Initial Template for Python 3
-if __name__ == '__main__': 
+if __name__ == '__main__':
     t = int (input ())
     for _ in range (t):

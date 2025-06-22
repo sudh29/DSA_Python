@@ -20,4 +20,3 @@ p = "abc"
 p2 = "xyz"
 print(sol(x, p))
 print(sol(x, p2))
-

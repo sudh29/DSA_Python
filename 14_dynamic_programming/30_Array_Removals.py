@@ -3,7 +3,7 @@
 class Solution:
 
 	def removals(self,arr, n, k):
-		
+
 		# Two pointer
 		arr.sort()
         min_removals = float('inf')
@@ -13,10 +13,10 @@ class Solution:
                 j += 1
             min_removals = min(min_removals, n - (j - i))
         return min_removals
-        
+
         # DP
 
-#{ 
+#{
  # Driver Code Starts
 #Initial Template for Python 3
 

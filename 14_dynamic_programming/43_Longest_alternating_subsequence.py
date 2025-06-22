@@ -1,9 +1,9 @@
-#User function Template for python3
+# User function Template for python3
 class Solution:
     # Function to find the maximum length of alternating subsequence
     def alternatingMaxLength(self, arr):
         if not arr:
-           return 0
+            return 0
         n = len(arr)
         up = 1
         down = 1
@@ -14,10 +14,12 @@ class Solution:
                 down = up + 1
         return max(up, down)
 
-#{ 
- # Driver Code Starts
+
+# {
+# Driver Code Starts
 if __name__ == "__main__":
     import sys
+
     input = sys.stdin.read
     data = input().splitlines()
 

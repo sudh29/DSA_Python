@@ -1,4 +1,3 @@
-
 """
 class Node:
     def __init__(self, val):
@@ -7,7 +6,8 @@ class Node:
         self.left = None
 """
 
-#Function to find the minimum element in the given BST.
+
+# Function to find the minimum element in the given BST.
 def minValue(root):
     # if root is None:
     #     return -1
@@ -16,10 +16,10 @@ def minValue(root):
     #         return minValue(root.left)
     #     else:
     #         return root.data
-            
+
     if root is None:
         return -1
-    q=[root]
+    q = [root]
     while q:
         curr = q.pop()
         if curr.left:

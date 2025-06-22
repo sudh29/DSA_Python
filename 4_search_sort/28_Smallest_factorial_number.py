@@ -6,7 +6,7 @@ class Solution:
             count += n // i
             i *= 5
         return count
-    
+
     def findNum(self, n: int) -> int:
         low = 5
         high = 1_000_000_000
@@ -19,6 +19,7 @@ class Solution:
                 high = mid - 1
             else:
                 low = mid + 1
+
 
 # Example usage:
 # sol = Solution()

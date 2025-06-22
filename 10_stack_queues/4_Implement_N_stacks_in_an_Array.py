@@ -14,7 +14,7 @@ class KStacks:
         if self.is_full():
             print("\nStack Overflow\n")
             return
-        
+
         # Get the index of the free slot
         i = self.free
         self.free = self.next[i]  # Update free to next free index
@@ -25,8 +25,8 @@ class KStacks:
     def pop(self, sn):
         if self.is_empty(sn):
             print("\nStack Underflow\n")
-            return float('inf')  # Return a large number
-        
+            return float("inf")  # Return a large number
+
         # Get the index of the top item
         i = self.top[sn]
         self.top[sn] = self.next[i]  # Update the top of the stack

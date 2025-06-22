@@ -11,7 +11,7 @@ def majorityElement(arr: list) -> int:
             count += 1
         else:
             count -= 1
-        
+
         if count == 0:
             maj_idx = i
             count = 1
@@ -24,8 +24,9 @@ def majorityElement(arr: list) -> int:
 
     if c > k:
         return arr[maj_idx]
-    
+
     return -1
+
 
 # Example usage:
 # arr = [3, 1, 3, 3, 2]

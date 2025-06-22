@@ -19,7 +19,7 @@ def main():
                 v.append(v[i])  # Append new interval
 
         # Remove extra intervals from the list
-        v = v[:idx + 1]
+        v = v[: idx + 1]
 
         for _ in range(q):
             k = int(input())
@@ -29,9 +29,10 @@ def main():
                     ans = v[i][0] + k - 1
                     break
                 else:
-                    k -= (v[i][1] - v[i][0] + 1)
+                    k -= v[i][1] - v[i][0] + 1
 
             print(ans)
+
 
 if __name__ == "__main__":
     main()

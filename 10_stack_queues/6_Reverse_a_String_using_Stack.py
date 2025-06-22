@@ -4,9 +4,9 @@ def reverse(S):
     #     temp.insert(0,i)
     # val=''.join(temp)
     # return val
-    
-    temp=list(S)
-    res=""
+
+    temp = list(S)
+    res = ""
     for i in range(len(temp)):
-        res+=temp.pop()
+        res += temp.pop()
     return res

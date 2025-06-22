@@ -3,7 +3,7 @@ public:
 
 	void rearrange(int arr[], int n) {
 	    // code here
-	    
+
 	    int arr1[n];
 	    int arr2[n];
 	    int k=0;
@@ -44,6 +44,6 @@ public:
                 i+=1;
             }
         }
-        
+
 	}
 };

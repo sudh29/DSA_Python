@@ -13,7 +13,7 @@ class Solution:
         #             return window_size
         #     window_size+=1
         # return 0
-        
+
         n = len(str)
         if n == 0:
             return 0
@@ -21,7 +21,7 @@ class Solution:
         required_char_count = len(unique_chars)
 
         char_count = {}
-        min_length = float('inf')
+        min_length = float("inf")
         left = 0
         unique_chars_in_window = 0
         for right in range(n):
@@ -37,23 +37,23 @@ class Solution:
                 if char_count[str[left]] == 0:
                     unique_chars_in_window -= 1
                 left += 1
-        return min_length if min_length != float('inf') else 0
-        
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
+        return min_length if min_length != float("inf") else 0
+
+
+# {
+# Driver Code Starts
+# Initial Template for Python 3
 
 
 def main():
-
     T = int(input())
 
-    while(T > 0):
-    	str = input()
-    	ob=Solution()
-    	print(ob.findSubString(str))
-    	
-    	T -= 1
+    while T > 0:
+        str = input()
+        ob = Solution()
+        print(ob.findSubString(str))
+
+        T -= 1
 
 
 if __name__ == "__main__":

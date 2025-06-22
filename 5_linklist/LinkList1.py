@@ -75,7 +75,6 @@ class LinkList:
 
 
 if __name__ == "__main__":
-
     L_list = LinkList()
     L_list.append(6)
     L_list.push(7)

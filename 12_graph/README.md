@@ -46,10 +46,10 @@ from collections import defaultdict
 class Graph():
     def __init__(self):
         self.graph = defaultdict(list)
-        
+
     def add_edge(self, u, v):
         self.graph[u].append(v)
-    
+
     def print_graph(self):
         print(self.graph)
 
@@ -117,10 +117,10 @@ from collections import defaultdict
 class Graph():
     def __init__(self):
         self.graph = defaultdict(list)
-        
+
     def add_edge(self,u,v):
         self.graph[u].append(v)
-    
+
     def print_graph(self):
         print(self.graph)
 
@@ -130,7 +130,7 @@ def solve_dfs(val,visited,graph):
     for i in graph[val]:
         if not visited[i]:
             solve_dfs(i,visited,graph)
-            
+
 def dfs(val,graph):
     visited = [False]*len(graph)
     solve_dfs(val,visited,graph)
@@ -161,7 +161,7 @@ def bfs(val,graph):
             if not visited[i]:
                 q.append(i)
                 visited[i]=True
-    
+
 # Example usage:
 g = Graph()
 g.add_edge(0, 1)
@@ -172,8 +172,8 @@ g.add_edge(2, 3)
 g.add_edge(3, 3)
 
 g.print_graph() # defaultdict(<class 'list'>, {0: [1, 2], 1: [2], 2: [0, 3], 3: [3]})
-dfs(2,g.graph) # 2 0 1 3 
+dfs(2,g.graph) # 2 0 1 3
 print()
-bfs(2,g.graph) # 2 0 3 1 
+bfs(2,g.graph) # 2 0 3 1
 
 ```

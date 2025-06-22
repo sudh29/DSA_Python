@@ -11,7 +11,7 @@ class Solution:
                 x=x^i
             else:
                 y=y^i
-        
+
         if x<y:
             return [x,y]
         else:

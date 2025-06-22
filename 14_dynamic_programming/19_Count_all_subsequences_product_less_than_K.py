@@ -1,4 +1,5 @@
-#User function Template for python3
+# User function Template for python3
+
 
 class Solution:
     def countSubArrayProductLessThanK(self, a, n, k):
@@ -12,7 +13,7 @@ class Solution:
                 start += 1
             count += end - start + 1
         return count
-        
+
         # # Non contiguous
         # if k <= 1:
         #     return 0
@@ -23,20 +24,21 @@ class Solution:
         #         if a[j - 1] <= i and a[j - 1] > 0:
         #             dp[i] += dp[i // a[j - 1]] + 1
         # return dp[k]
-        
-#{ 
- # Driver Code Starts
 
-#Initial Template for Python 3
+
+# {
+# Driver Code Starts
+
+# Initial Template for Python 3
+
 
 def main():
-
     T = int(input())
 
-    while(T > 0):
+    while T > 0:
         n, k = [int(x) for x in input().strip().split()]
         arr = [int(x) for x in input().strip().split()]
-        
+
         print(Solution().countSubArrayProductLessThanK(arr, n, k))
 
         T -= 1

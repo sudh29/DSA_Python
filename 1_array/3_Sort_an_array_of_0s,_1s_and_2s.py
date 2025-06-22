@@ -1,7 +1,7 @@
 class Solution:
-    def sort012(self,arr,n):
+    def sort012(self, arr, n):
         # code here
-        '''dic={}
+        """dic={}
         for i in arr:
             if i not in dic:
                 dic[i]=1
@@ -14,9 +14,9 @@ class Solution:
                 temp.append(i)
         #print(temp)
         for i in range(n):
-            arr[i]=temp[i]'''
-        
-        '''zero=arr.count(0)
+            arr[i]=temp[i]"""
+
+        """zero=arr.count(0)
         one=arr.count(1)
         two=arr.count(2)
         #print(zero,one,two)
@@ -29,20 +29,20 @@ class Solution:
                 one-=1
             elif zero==0 and one==0 and two>0:
                 arr[i]=2
-                two-=1'''
-        
-        low=0
-        high=n-1
-        mid=0
-        while mid<=high:
-            if arr[mid]==0:
-                arr[mid],arr[low]=arr[low],arr[mid]
-                low+=1
-                mid+=1
-            elif arr[mid]==1:
-                mid+=1
+                two-=1"""
+
+        low = 0
+        high = n - 1
+        mid = 0
+        while mid <= high:
+            if arr[mid] == 0:
+                arr[mid], arr[low] = arr[low], arr[mid]
+                low += 1
+                mid += 1
+            elif arr[mid] == 1:
+                mid += 1
             else:
-                arr[mid],arr[high]=arr[high],arr[mid]
-                high-=1
-        
+                arr[mid], arr[high] = arr[high], arr[mid]
+                high -= 1
+
         return arr

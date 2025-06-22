@@ -12,12 +12,12 @@ class Solution:
             else:
                 val=temp[i:]
                 temp[i:]=val[::-1]
-        curr=head       
+        curr=head
         for i in range(len(temp)):
             curr.data=temp[i]
             curr=curr.next
         return head'''
-        
+
         curr=head
         prev=None
         c=0

@@ -1,4 +1,5 @@
-#User function Template for python3
+# User function Template for python3
+
 
 class Solution:
     def longestCommonSubstr(self, str1, str2):
@@ -15,11 +16,12 @@ class Solution:
                     dp[i][j] = 0
         return max_len
 
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
 
-if __name__ == '__main__':
+# {
+# Driver Code Starts
+# Initial Template for Python 3
+
+if __name__ == "__main__":
     t = int(input())
     for _ in range(t):
         S1 = input().strip()

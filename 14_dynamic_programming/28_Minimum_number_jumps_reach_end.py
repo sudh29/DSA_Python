@@ -15,7 +15,7 @@ class Solution:
                 current_end = farthest
                 if current_end >= n - 1:
                     return jumps
-        return -1 
+        return -1
 
         # # DP
         # dp = [float('inf')] * n
@@ -25,8 +25,8 @@ class Solution:
         #         if i <= j + arr[j]:
         #             dp[i] = min(dp[i], dp[j] + 1)
         # return dp[-1] if dp[-1] != float('inf') else -1
-        
-#{ 
+
+#{
  # Driver Code Starts
 #Initial Template for Python 3
 if __name__ == '__main__':

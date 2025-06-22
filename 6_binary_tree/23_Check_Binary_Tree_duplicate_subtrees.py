@@ -1,11 +1,13 @@
-'''
+"""
 # Node Class:
 class Node:
     def _init_(self,val):
         self.data = val
         self.left = None
         self.right = None
-        '''
+"""
+
+
 class Solution:
     def dupSub(self, root):
         # seen_subtrees = set()
@@ -33,17 +35,18 @@ class Solution:
         #     return current_serialized
 
         # return 1 if serialize_and_check_duplicate(root) == True else 0
-        
+
         subtree_map = {}
         res = []
+
         def dfs(node):
-            if not node: 
+            if not node:
                 return "null"
-            if not node.left and not node.right: 
+            if not node.left and not node.right:
                 s = str(node.data)
                 return s
-            s = ",".join([str(node.data),dfs(node.left),dfs(node.right)])
-            
+            s = ",".join([str(node.data), dfs(node.left), dfs(node.right)])
+
             if s in subtree_map:
                 if subtree_map[s] == 1:
                     res.append(node)
@@ -51,6 +54,6 @@ class Solution:
             else:
                 subtree_map[s] = 1
             return s
-        
+
         dfs(root)
         return 1 if len(res) else 0

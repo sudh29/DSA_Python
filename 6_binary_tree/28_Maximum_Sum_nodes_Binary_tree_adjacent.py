@@ -1,18 +1,19 @@
-
-'''
+"""
 # Node Class:
 class Node:
     def __init__(self,val):
         self.data = val
         self.left = None
         self.right = None
-'''
+"""
+
 max_res = -999999999
 val_dic = {}
 
+
 class Solution:
-    #Function to return the maximum sum of non-adjacent nodes.
-    def getMaxSum(self,root):
+    # Function to return the maximum sum of non-adjacent nodes.
+    def getMaxSum(self, root):
         # global max_res
         # if root is None:
         #     return 0
@@ -24,12 +25,12 @@ class Solution:
         # if root.right:
         #     inc += self.getMaxSum(root.right.left)
         #     inc += self.getMaxSum(root.right.right)
-        
+
         # exc = self.getMaxSum(root.left) + self.getMaxSum(root.right)
         # val_dic[root] = max(max_res,max(inc,exc))
-    
+
         # return val_dic[root]
-        
+
         def dfs(node):
             if not node:
                 return (0, 0)

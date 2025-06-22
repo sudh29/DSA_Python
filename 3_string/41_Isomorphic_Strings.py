@@ -1,10 +1,10 @@
-#User function Template for python3
+# User function Template for python3
+
 
 class Solution:
-    
-    #Function to check if two strings are isomorphic.
-    def areIsomorphic(self,str1,str2):
-        if len(str1)!=len(str2):
+    # Function to check if two strings are isomorphic.
+    def areIsomorphic(self, str1, str2):
+        if len(str1) != len(str2):
             return False
         map_str1_to_str2 = {}
         map_str2_to_str1 = {}
@@ -20,33 +20,34 @@ class Solution:
             else:
                 map_str2_to_str1[char2] = char1
         return True
-        
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
+
+
+# {
+# Driver Code Starts
+# Initial Template for Python 3
 
 import atexit
 import io
 import sys
-from collections import defaultdict
 
 _INPUT_LINES = sys.stdin.read().splitlines()
 input = iter(_INPUT_LINES).__next__
 _OUTPUT_BUFFER = io.StringIO()
 sys.stdout = _OUTPUT_BUFFER
 
-@atexit.register
 
+@atexit.register
 def write():
     sys.__stdout__.write(_OUTPUT_BUFFER.getvalue())
 
-if __name__=='__main__':
+
+if __name__ == "__main__":
     t = int(input())
     for i in range(t):
-        s=str(input())
-        p=str(input())
+        s = str(input())
+        p = str(input())
         ob = Solution()
-        if(ob.areIsomorphic(s,p)):
+        if ob.areIsomorphic(s, p):
             print(1)
         else:
             print(0)

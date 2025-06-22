@@ -39,4 +39,4 @@ class Solution:
                 else:
                     curr[j] = False
             prev = curr[:]
-        return s[start:start + max_length]
+        return s[start : start + max_length]
