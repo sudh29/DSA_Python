@@ -1,7 +1,6 @@
 # using greedy programing
 
 # fractional knapsack
-from collections import OrderedDict
 
 
 def knapsackFractional(maxWeight, weight, value, n):
@@ -34,4 +33,3 @@ weight = [10, 20, 30]
 w = 50
 n = len(val)
 print(knapsackFractional(w, weight, val, n))
-

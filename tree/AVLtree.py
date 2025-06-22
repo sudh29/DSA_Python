@@ -84,4 +84,3 @@ root = myTree.insert(root, 25)
 print("Preorder of AVL tree")
 myTree.preOrder(root)
 print()
-

@@ -23,4 +23,3 @@ matrix = [
     [1, 1, 1, 1, 1],
 ]
 print(pathFinder(matrix, (0, 0), 5))
-

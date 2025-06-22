@@ -21,4 +21,3 @@ weight = [10, 20, 30]
 w = 50
 n = len(val)
 print(knapsack(w, weight, val, n))
-

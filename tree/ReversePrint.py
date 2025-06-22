@@ -33,4 +33,3 @@ if __name__ == "__main__":
     root.right.right = Node(7)
 
 print(reversePrint(root))
-

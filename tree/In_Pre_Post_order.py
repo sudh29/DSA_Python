@@ -1,5 +1,6 @@
 # tree data structure with level order ,Inorder, Preorder,Postorder
 
+
 class Node:
     def __init__(self, data):
         self.left = None
