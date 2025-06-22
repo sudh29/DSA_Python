@@ -1,32 +1,27 @@
+# 📚 DSA Python Roadmap
 
-# DSA_Python
+This repository contains categorized solutions to Data Structures and Algorithms (DSA) problems using Python. Each topic below links to a detailed `README.md` file containing problem statements and solutions.
 
-[1 Array](https://github.com/sudh29/Array/blob/main/README.md)
+---
 
-[2 Matrix](https://github.com/sudh29/Matrix/blob/main/README.md)
+## 📌 Topic-wise Index
 
-[3 String](https://github.com/sudh29/StringAlgorithms/blob/main/README.md)
+| No. | Topic                                                      | Description                                                           |
+| --- | ---------------------------------------------------------- | --------------------------------------------------------------------- |
+| 1   | [📦 Array](1_array/README.md)                              | Problems on arrays, subarrays, sliding window, etc.                   |
+| 2   | [🧮 Matrix](2_matrix/README.md)                            | 2D arrays, traversal patterns, and pathfinding problems               |
+| 3   | [🔤 String](3_string/README.md)                            | String manipulation, palindrome, hashing, and pattern matching        |
+| 4   | [🔍 Search & Sort](4_search_sort/README.md)                | Sorting techniques, binary search, and efficient searching strategies |
+| 5   | [🔗 Linked List](5_linklist/README.md)                     | Operations on singly, doubly, and circular linked lists               |
+| 6   | [🌳 Binary Tree](6_binary_tree/README.md)                  | Tree traversals, structural views, and conversions                    |
+| 7   | [🌲 Binary Search Tree](7_bst/README.md)                   | Insertion, deletion, LCA, and BST validation                          |
+| 8   | [⚡ Greedy](8_greedy/README.md)                            | Optimization problems using greedy strategies                         |
+| 9   | [🔁 Backtracking](9_backtracking/README.md)                | Constraint-based recursion and combinatorial problems                 |
+| 10  | [🥞 Stack & Queue](10_stack_queues/README.md)              | Implementations and applications in parsing, sorting, and more        |
+| 11  | [🛠️ Heap](11_heap/README.md)                               | Max-heap, min-heap, priority queues, and heap-based algorithms        |
+| 12  | [🧭 Graph](12_graph/README.md)                             | Traversals, shortest paths, MST, and topological sort                 |
+| 13  | [🌐 Trie](13_Trie/README.md)                               | Prefix trees for dictionary, autocomplete, and word search            |
+| 14  | [📊 Dynamic Programming](14_dynamic_programming/README.md) | Memoization, tabulation, and optimal substructure problems            |
+| 15  | [💡 Bit Manipulation](15_bit_manipulation/README.md)       | Bitwise tricks, binary representation problems                        |
 
-[4 Search & Sort](https://github.com/sudh29/Search-Sort/blob/main/README.md)
-
-[5 Linked List](https://github.com/sudh29/LinkList/blob/main/README.md)
-
-[6 Binary Trees](https://github.com/sudh29/Binary-Tree/blob/main/README.md)
-
-[7 BST](https://github.com/sudh29/BST/blob/main/README.md)
-
-[8 Greedy](https://github.com/sudh29/Greedy/blob/main/README.md)
-
-[9 BackTracking](https://github.com/sudh29/Backtracking/blob/main/README.md)
-
-[10 Stacks & Queues](https://github.com/sudh29/Stack-Queues/blob/main/README.md)
-
-[11 Heap](https://github.com/sudh29/Heap/blob/main/README.md)
-
-[12 Graph](https://github.com/sudh29/graph_/blob/main/README.md)
-
-[13 Trie](https://github.com/sudh29/Trie/blob/main/README.md)
-
-[14 Dynamic Programming](https://github.com/sudh29/Dynamic-Programming/blob/main/README.md)
-
-[15 Bit Manipulation](https://github.com/sudh29/Bit-Manipulation/blob/main/README.md)
+---
