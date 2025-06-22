@@ -6,15 +6,17 @@ class Solution:
         # self.invertTree(root.right)
         # root.left, root.right = root.right, root.left
         # return root
-        
+
         if root is None:
             return
         q = []
         q.append(root)
-        while (len(q)):
+        while len(q):
             curr = q[0]
             q.pop(0)
             curr.left, curr.right = curr.right, curr.left
-            if (curr.left): q.append(curr.left)
-            if (curr.right): q.append(curr.right)
+            if curr.left:
+                q.append(curr.left)
+            if curr.right:
+                q.append(curr.right)
         return root

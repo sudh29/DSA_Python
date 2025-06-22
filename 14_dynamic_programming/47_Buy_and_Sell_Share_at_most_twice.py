@@ -1,7 +1,8 @@
 from typing import List
 
+
 class Solution:
-    def maxProfit(self, n : int, price : List[int]) -> int:
+    def maxProfit(self, n: int, price: List[int]) -> int:
         if n == 0:
             return 0
         left_profit = [0] * n
@@ -18,16 +19,19 @@ class Solution:
         for i in range(n):
             max_profit = max(max_profit, left_profit[i] + right_profit[i])
         return max_profit
-        
-#{ 
- # Driver Code Starts
+
+
+# {
+# Driver Code Starts
 class IntArray:
     def __init__(self) -> None:
         pass
-    def Input(self,n):
-        arr=[int(i) for i in input().strip().split()]#array input
+
+    def Input(self, n):
+        arr = [int(i) for i in input().strip().split()]  # array input
         return arr
-    def Print(self,arr):
+
+    def Print(self, arr):
         for i in arr:
-            print(i,end=" ")
+            print(i, end=" ")
         print()

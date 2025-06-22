@@ -15,6 +15,7 @@ def get_pivot_element(array, left, right):
     else:
         return get_pivot_element(array, middle + 1, right)
 
+
 # Example usage:
 array = [4, 5, 6, 7, 8, 1, 2, 3]
 pivot_index = get_pivot_element(array, 0, len(array) - 1)

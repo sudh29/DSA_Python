@@ -1,4 +1,3 @@
-
 class Solution:
     def maxGold(self, n, m, M):
         for col in range(m - 2, -1, -1):
@@ -9,21 +8,22 @@ class Solution:
                 M[row][col] += max(right, right_up, right_down)
         return max(M[row][0] for row in range(n))
 
-#{ 
- # Driver Code Starts
+
+# {
+# Driver Code Starts
 # Initial Template for Python3
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t = int(input())
     for _ in range(t):
         n, m = [int(x) for x in input().split()]
         tarr = [int(x) for x in input().split()]
         M = []
         j = 0
-        for i in range (n):
-            M.append(tarr[j:j + m])
-            j = j+m
-        
+        for i in range(n):
+            M.append(tarr[j : j + m])
+            j = j + m
+
         ob = Solution()
         print(ob.maxGold(n, m, M))
 # } Driver Code Ends

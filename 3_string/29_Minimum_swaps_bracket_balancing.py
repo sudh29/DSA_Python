@@ -1,9 +1,9 @@
-#User function Template for python3
+# User function Template for python3
 class Solution:
-    def minimumNumberOfSwaps(self,S):
+    def minimumNumberOfSwaps(self, S):
         open_count, close_count, UB, swaps = 0, 0, 0, 0
         for char in S:
-            if char == '[':
+            if char == "[":
                 open_count += 1
                 if UB > 0:
                     swaps += UB
@@ -13,14 +13,14 @@ class Solution:
                 UB = close_count - open_count
         return swaps
 
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
-if __name__ == '__main__': 
-    t = int (input ())
-    for _ in range (t):
-        
-        S=str(input())
+
+# {
+# Driver Code Starts
+# Initial Template for Python 3
+if __name__ == "__main__":
+    t = int(input())
+    for _ in range(t):
+        S = str(input())
         ob = Solution()
         print(ob.minimumNumberOfSwaps(S))
 # } Driver Code Ends

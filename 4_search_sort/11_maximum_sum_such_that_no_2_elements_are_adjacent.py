@@ -14,6 +14,6 @@ class Solution:
 
         # Fill the dp array with maximum sums
         for i in range(2, n):
-            dp[i] = max(dp[i-1], arr[i] + dp[i-2])
+            dp[i] = max(dp[i - 1], arr[i] + dp[i - 2])
 
-        return dp[n-1]
+        return dp[n - 1]

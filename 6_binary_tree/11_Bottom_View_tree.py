@@ -13,7 +13,7 @@
             r = max(r,hd)
             if curr.left: q.append((curr.left,hd-1))
             if curr.right: q.append((curr.right,hd+1))
-            
+
         res=[]
         for i in range(l,r+1):
             res.append(m[i])

@@ -25,3 +25,66 @@ This repository contains categorized solutions to Data Structures and Algorithms
 | 15  | [💡 Bit Manipulation](15_bit_manipulation/README.md)       | Bitwise tricks, binary representation problems                        |
 
 ---
+
+## ⚙️ Setup & Development Guide
+
+A step-by-step guide to set up and run Django projects using [`uv`](https://astral.sh/uv/), a blazing fast Python package manager.
+
+### ✅ Requirements
+
+- Python 3.12+
+- [`uv`](https://astral.sh/uv/) (virtual environment and package management tool)
+
+---
+
+### 🚀 Getting Started
+
+#### 1. Install `uv`
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+2. Create a virtual environment
+
+```bash
+uv venv
+```
+
+3. Activate the virtual environment
+
+```bash
+source .venv/bin/activate
+```
+
+4. Install project dependencies
+
+```bash
+uv pip install -r requirements.txt
+```
+
+Alternatively:
+
+```bash
+uv sync
+```
+
+5. (Optional) Freeze current dependencies
+
+```bash
+uv pip freeze > requirements.txt
+```
+
+🔍 Code Quality & Pre-commit Hooks 10. Install pre-commit hooks
+
+```bash
+pre-commit install
+```
+
+11. Run pre-commit on all files
+
+```bash
+pre-commit run --all-files
+```
+
+########################################################

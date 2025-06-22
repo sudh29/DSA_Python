@@ -12,7 +12,7 @@ def getNthFromLast(head,n):
     for i in range(n_new):
         temp=temp.next
     return temp.data'''
-    
+
     slow=head
     fast=head
     for i in range(1,n):

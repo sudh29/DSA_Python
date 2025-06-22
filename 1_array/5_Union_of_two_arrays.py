@@ -1,9 +1,9 @@
-class Solution:    
-    #Function to return the count of number of elements in union of two arrays.
-    def doUnion(self,a,n,b,m):
-        a=set(a+b)
+class Solution:
+    # Function to return the count of number of elements in union of two arrays.
+    def doUnion(self, a, n, b, m):
+        a = set(a + b)
         return len(a)
-    
+
     def intersect(self, nums1, nums2):
         nums1.sort(), nums2.sort()
         res = []
@@ -14,7 +14,7 @@ class Solution:
             elif nums1[it1] > nums2[it2]:
                 it2 += 1
             else:
-                res += nums1[it1],
+                res += (nums1[it1],)
                 it1 += 1
                 it2 += 1
         return res

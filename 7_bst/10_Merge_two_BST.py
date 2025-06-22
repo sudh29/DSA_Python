@@ -1,11 +1,11 @@
-
-'''
+"""
 class Node:
     def __init__(self, val):
         self.right = None
         self.data = val
         self.left = None
-'''
+"""
+
 
 class Solution:
     def merge(self, root1, root2):
@@ -26,28 +26,28 @@ class Solution:
                 arr.append(arr2[j])
                 j += 1
             return arr
-            
+
         def arr_to_bst(arr):
             if not arr:
                 return None
             mid = len(arr) // 2
             root = Node(arr[mid])
             root.left = arr_to_bst(arr[:mid])
-            root.right = arr_to_bst(arr[mid + 1:])
+            root.right = arr_to_bst(arr[mid + 1 :])
             return root
-            
-        def inorder(node,ans):
+
+        def inorder(node, ans):
             if node is None:
                 return
-            inorder(node.left,ans)
+            inorder(node.left, ans)
             ans.append(node.data)
-            inorder(node.right,ans)
-            
-        tree1=[]
-        tree2=[]
-        inorder(root1,tree1)
-        inorder(root2,tree2)
-        tree = merge_sorted_arr(tree1,tree2)
+            inorder(node.right, ans)
+
+        tree1 = []
+        tree2 = []
+        inorder(root1, tree1)
+        inorder(root2, tree2)
+        tree = merge_sorted_arr(tree1, tree2)
         # print(tree)
         # root = arr_to_bst(tree)
-        return tree  
+        return tree

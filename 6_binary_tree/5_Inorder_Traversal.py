@@ -5,7 +5,6 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-
     # def inorder(self,root,res):
     #     if root is None:
     #         return
@@ -29,7 +28,3 @@ class Solution:
             res.append(root.val)
             root = root.right
         return res
-
-
-        
-        

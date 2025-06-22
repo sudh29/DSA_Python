@@ -1,6 +1,6 @@
 def getMinMax(a: list, n: int) -> tuple:
-    min_val = float('inf')  # Initialize to infinity
-    max_val = float('-inf') # Initialize to negative infinity
+    min_val = float("inf")  # Initialize to infinity
+    max_val = float("-inf")  # Initialize to negative infinity
 
     for i in range(n):
         if a[i] > max_val:
@@ -9,6 +9,7 @@ def getMinMax(a: list, n: int) -> tuple:
             min_val = a[i]
 
     return (min_val, max_val)
+
 
 # Example usage:
 # arr = [1, 2, 3, 4, 5]

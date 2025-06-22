@@ -1,8 +1,9 @@
-#User function Template for python3
+# User function Template for python3
+
 
 def solve(arr, target, current, idx, result):
     if target == 0:
-        #if current[:] not in result:
+        # if current[:] not in result:
         result.append(current[:])
         return
     for i in range(idx, len(arr)):
@@ -16,29 +17,28 @@ def solve(arr, target, current, idx, result):
 
 
 class Solution:
-    #Function to return a list of indexes denoting the required 
-    #combinations whose sum is equal to given number.
-    def combinationalSum(self,A, B):
+    # Function to return a list of indexes denoting the required
+    # combinations whose sum is equal to given number.
+    def combinationalSum(self, A, B):
         A.sort()
         result = []
         solve(A, B, [], 0, result)
         return result
-    
-    
-
-#{ 
- # Driver Code Starts.
 
 
-if __name__ == '__main__':
+# {
+# Driver Code Starts.
+
+
+if __name__ == "__main__":
     test_cases = int(input())
     for cases in range(test_cases):
         n = int(input())
-        a = list(map(int,input().strip().split()))
+        a = list(map(int, input().strip().split()))
         s = int(input())
         ob = Solution()
-        result = ob.combinationalSum(a,s)
-        if(not len(result)):
+        result = ob.combinationalSum(a, s)
+        if not len(result):
             print("Empty")
             continue
         for i in range(len(result)):
@@ -46,7 +46,7 @@ if __name__ == '__main__':
             size = len(result[i])
             for j in range(size - 1):
                 print(result[i][j], end=" ")
-            if (size):
+            if size:
                 print(result[i][size - 1], end=")")
             else:
                 print(")", end="")

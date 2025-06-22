@@ -3,6 +3,7 @@ class Appointment:
         self.start = start
         self.end = end
 
+
 def findConflictingAppointments(appointments):
     appointments.sort(key=lambda x: x.start)
 
@@ -15,9 +16,12 @@ def findConflictingAppointments(appointments):
         for j in range(i + 1, len(appointments)):
             future_appointment = appointments[j]
             if current_appointment.end > future_appointment.start:
-                conflicting_appointments.append((current_appointment, future_appointment))
+                conflicting_appointments.append(
+                    (current_appointment, future_appointment)
+                )
 
     return conflicting_appointments
+
 
 # Example usage:
 appointments = [
@@ -32,6 +36,8 @@ conflicts = findConflictingAppointments(appointments)
 
 if conflicts:
     for conflict in conflicts:
-        print(f"Conflicting Appointments: {conflict[0].start}-{conflict[0].end} and {conflict[1].start}-{conflict[1].end}")
+        print(
+            f"Conflicting Appointments: {conflict[0].start}-{conflict[0].end} and {conflict[1].start}-{conflict[1].end}"
+        )
 else:
     print("No conflicting appointments.")

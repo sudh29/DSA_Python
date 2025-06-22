@@ -24,7 +24,7 @@ def LeftView(root):
                 if temp.right!=None:
                     q.append(temp.right)
     return res
-        
+
 def LeftViewRes(root,level,res):
     if root is None:
         return

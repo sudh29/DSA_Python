@@ -3,18 +3,18 @@ def solve(n, m, X, Y, ans):
         return 0
     if ans[n][m] != -1:
         return ans[n][m]
-    if X[n-1] == Y[m-1]:
-        ans[n][m] = 1 + solve(n-1, m-1, X, Y, ans)
+    if X[n - 1] == Y[m - 1]:
+        ans[n][m] = 1 + solve(n - 1, m - 1, X, Y, ans)
     else:
-        ans[n][m] = max(solve(n-1, m, X, Y, ans), solve(n, m-1, X, Y, ans))
+        ans[n][m] = max(solve(n - 1, m, X, Y, ans), solve(n, m - 1, X, Y, ans))
     return ans[n][m]
-        
+
+
 class Solution:
     def lcs(self, n, m, X, Y):
-        
         # ans = [[-1 for _ in range(m+1)] for _ in range(n+1)]
         # return solve(n, m, X, Y, ans)
-        
+
         # DP
         prev = [0] * (m + 1)
         curr = [0] * (m + 1)
@@ -27,16 +27,14 @@ class Solution:
             prev, curr = curr, [0] * (m + 1)
         return prev[m]
 
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
-import atexit
-import io
-import sys
+
+# {
+# Driver Code Starts
+# Initial Template for Python 3
 
 # Contributed by : Nagendra Jha
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_cases = int(input())
     for cases in range(test_cases):
         n, m = map(int, input().strip().split())

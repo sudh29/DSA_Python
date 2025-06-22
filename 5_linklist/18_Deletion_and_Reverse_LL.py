@@ -5,7 +5,7 @@ class Node:
 
 '''
 
-# Function to delete a given node from the list 
+# Function to delete a given node from the list
 def deleteNode(head, key):
     #your code goes here
     curr=head
@@ -13,7 +13,7 @@ def deleteNode(head, key):
         curr=curr.next
     curr.next=curr.next.next
 
-        
+
 
 
 #Function to reverse the list
@@ -35,5 +35,5 @@ def reverse(temp_head):
         curr=next
     curr.next=prev
     temp_head.next=curr
-    global head 
+    global head
     head = curr

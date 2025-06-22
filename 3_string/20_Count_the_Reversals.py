@@ -1,9 +1,9 @@
-def countRev (S):
+def countRev(S):
     if len(S) % 2 != 0:
-            return -1
-            
+        return -1
+
     unbalanced_open, unbalanced_close = 0, 0
-            
+
     # stack = []
     # for char in S:
     #     if char == '{':
@@ -13,7 +13,7 @@ def countRev (S):
     #             stack.pop()
     #         else:
     #             stack.append(char)
-                
+
     # while stack:
     #     if stack.pop() == '{':
     #         unbalanced_open += 1
@@ -21,7 +21,7 @@ def countRev (S):
     #         unbalanced_close += 1
 
     for char in S:
-        if char == '{':
+        if char == "{":
             unbalanced_open += 1
         else:
             if unbalanced_open > 0:
@@ -32,12 +32,13 @@ def countRev (S):
     reversals = (unbalanced_open + 1) // 2 + (unbalanced_close + 1) // 2
     return reversals
 
-#{ 
- # Driver Code Starts
-t = int (input ())
-for tc in range (t):
-    s = input ()
-    print (countRev (s))
+
+# {
+# Driver Code Starts
+t = int(input())
+for tc in range(t):
+    s = input()
+    print(countRev(s))
 
 # Contributed By: Pranay Bansal
 

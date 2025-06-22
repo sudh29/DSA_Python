@@ -1,14 +1,13 @@
-import sys
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
-        '''n=len(nums)
+        """n=len(nums)
         res=sys.maxsize
         i=0
         j=1
         temp=nums[i]
         if temp>=target: return 1
         if j<n: temp+=nums[j]
-        while(i<n and j<n): 
+        while(i<n and j<n):
             if temp>=target:
                 res=min(res,j-i+1)
                 temp-=nums[i]
@@ -17,12 +16,12 @@ class Solution:
                 j+=1
                 if j<n:
                     temp+=nums[j]
-        return res if res<sys.maxsize else 0'''
+        return res if res<sys.maxsize else 0"""
 
         n = len(nums)
         left = 0
         total = 0
-        min_length = float('inf')
+        min_length = float("inf")
 
         for right in range(n):
             total += nums[right]
@@ -32,5 +31,4 @@ class Solution:
                 total -= nums[left]
                 left += 1
 
-        return min_length if min_length != float('inf') else 0
-        
+        return min_length if min_length != float("inf") else 0

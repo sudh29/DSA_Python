@@ -3,6 +3,7 @@ class TrieNode:
         self.children = {}
         self.contacts = set()
 
+
 class Trie:
     def __init__(self):
         self.root = TrieNode()
@@ -23,6 +24,7 @@ class Trie:
             node = node.children[char]
         return sorted(node.contacts)
 
+
 class Solution:
     def displayContacts(self, n, contact, s):
         trie = Trie()
@@ -39,21 +41,22 @@ class Solution:
                 results.append(["0"])
         return results
 
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
 
-if __name__ == '__main__':
+# {
+# Driver Code Starts
+# Initial Template for Python 3
+
+if __name__ == "__main__":
     t = int(input())
     for _ in range(t):
         n = int(input())
         contact = input().split()
         s = input()
-        
+
         ob = Solution()
         ans = ob.displayContacts(n, contact, s)
         for i in range(len(s)):
             for val in ans[i]:
-                print(val, end = " ")
+                print(val, end=" ")
             print()
 # } Driver Code Ends

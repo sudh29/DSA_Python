@@ -7,9 +7,9 @@ def cal(a,b,operator):
         return int(a)*int(b)
     elif operator=='/':
         return int(a)/int(b)
-        
+
 class Solution:
-    
+
     #Function to evaluate a postfix expression.
     def evaluatePostfix(self, S):
         operator=['*','/','+','-']
@@ -33,7 +33,7 @@ class Solution:
             if S[i] in ['+', '-', '*', '/']:
                 a = stack.pop()
                 b = stack.pop()
-                
+
                 if S[i] == '+':
                     res = b + a
                 elif S[i] == '-':

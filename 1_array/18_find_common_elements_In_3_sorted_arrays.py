@@ -1,26 +1,24 @@
-
 class Solution:
-    def commonElements (self,A, B, C, n1, n2, n3):
-        
+    def commonElements(self, A, B, C, n1, n2, n3):
         # Extra space
-        temp={}
-        A=list(set(A))
-        B=list(set(B))
-        C=list(set(C))
+        temp = {}
+        A = list(set(A))
+        B = list(set(B))
+        C = list(set(C))
         for i in A:
-            temp[i] = temp.get(i,0)+1
+            temp[i] = temp.get(i, 0) + 1
         for i in B:
-            temp[i] = temp.get(i,0)+1
+            temp[i] = temp.get(i, 0) + 1
         for i in C:
-            temp[i] = temp.get(i,0)+1
-        res=[]
-        temp1=temp
-        val=sorted(temp)
+            temp[i] = temp.get(i, 0) + 1
+        res = []
+        temp1 = temp
+        val = sorted(temp)
         for i in val:
-            if temp1[i]==3:
+            if temp1[i] == 3:
                 res.append(i)
         return res
-        
+
         # # 3 Pointer
         # i, j, k = 0, 0, 0
         # common_elements = set()

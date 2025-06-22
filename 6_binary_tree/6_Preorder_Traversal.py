@@ -9,21 +9,23 @@ class Solution:
         if root is None:
             return
         res.append(root.val)
-        self.preorder(root.left,res)
-        self.preorder(root.right,res)
+        self.preorder(root.left, res)
+        self.preorder(root.right, res)
 
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         # res = []
         # self.preorder(root,res)
         # return res
-        
-        if root is None :
-            return 
-        q=[root]
-        res=[]
+
+        if root is None:
+            return
+        q = [root]
+        res = []
         while q:
             curr = q.pop()
             res.append(curr.val)
-            if curr.right is not None: q.append(curr.right)
-            if curr.left is not None: q.append(curr.left)
+            if curr.right is not None:
+                q.append(curr.right)
+            if curr.left is not None:
+                q.append(curr.left)
         return res

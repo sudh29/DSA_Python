@@ -7,7 +7,7 @@ class Solution:
         # for i in range(n):
         #     arr[i]=temp[i]
         # return arr
-        
+
         for i in range(n):
             if arr[i]>=0:
                 pos=i
@@ -23,10 +23,10 @@ class Solution:
                 arr[pos],arr[neg]=arr[neg],arr[pos]
                 pos+=1
                 neg+=1
-        
+
         print(arr)
 
-        
+
 # Two pointer
 def move_negatives(arr):
     left = 0

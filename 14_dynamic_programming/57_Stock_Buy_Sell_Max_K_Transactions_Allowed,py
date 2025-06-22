@@ -12,7 +12,7 @@ class Solution:
                 max_so_far = max(max_so_far, dp[t-1][d] - A[d])
         return dp[K][N-1]
 
-#{ 
+#{
  # Driver Code Starts
 #Initial Template for Python 3
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
         A = input().split()
         for i in range(N):
             A[i] = int(A[i])
-        
+
         ob = Solution()
         print(ob.maxProfit(K, N, A))
 # } Driver Code Ends

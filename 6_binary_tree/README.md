@@ -57,7 +57,7 @@ BFS uses a queue data structure to keep track of the nodes to be visited next.
 
 ## Below are the Python implementations of DFS and BFS for a binary tree:
 
-```python 
+```python
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -119,4 +119,3 @@ dfs_postorder(root) # Output: 4 5 2 3 1
 print("\nBFS:")
 bfs(root)  # Output: 1 2 3 4 5
 ```
-

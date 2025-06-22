@@ -1,6 +1,5 @@
 class Solution:
     def divide(self, N, head):
-        
         # curr=head
         # temp=[]
         # while curr:
@@ -19,22 +18,22 @@ class Solution:
         #     curr.data=i
         #     curr=curr.next
         # return head
-        
+
         end = head
         prev = None
         curr = head
-        while (end.next != None):
+        while end.next != None:
             end = end.next
         new_end = end
-        while (curr.data % 2 !=0 and curr != end):
+        while curr.data % 2 != 0 and curr != end:
             new_end.next = curr
             curr = curr.next
             new_end.next.next = None
             new_end = new_end.next
-        if (curr.data % 2 == 0):
+        if curr.data % 2 == 0:
             head = curr
-            while (curr != end):
-                if (curr.data % 2 == 0):
+            while curr != end:
+                if curr.data % 2 == 0:
                     prev = curr
                     curr = curr.next
                 else:
@@ -45,7 +44,7 @@ class Solution:
                     curr = prev.next
         else:
             prev = curr
-        if (new_end != end and end.data % 2 != 0):
+        if new_end != end and end.data % 2 != 0:
             prev.next = end.next
             end.next = None
             new_end.next = end

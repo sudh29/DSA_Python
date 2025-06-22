@@ -7,6 +7,7 @@ def search(arr: list, n: int, x: int, k: int) -> int:
         i += max(1, (arr[i] - k) // x)
     return -1
 
+
 # Example usage:
 # arr = [10, 20, 30, 40, 50]
 # x = 30

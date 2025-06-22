@@ -1,14 +1,15 @@
-#User function Template for python3
+# User function Template for python3
 
-'''
+"""
 class Pair(object):
     def __init__(self, a, b):
         self.a = a
         self.b = b
-'''
+"""
+
+
 class Solution:
     def maxChainLen(self, P, n):
-        
         # Greedy
         P.sort(key=lambda x: x.b)
         max_length = 1
@@ -18,7 +19,7 @@ class Solution:
                 max_length += 1
                 last_selected_end = P[i].b
         return max_length
-        
+
         # # DP
         # P.sort(key=lambda x: x.a)
         # dp = [1] * n
@@ -27,34 +28,36 @@ class Solution:
         #         if P[j].b < P[i].a:
         #             dp[i] = max(dp[i], dp[j] + 1)
         # return max(dp)
-    
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
+
+
+# {
+# Driver Code Starts
+# Initial Template for Python 3
+
 
 class Pair(object):
     def __init__(self, a, b):
         self.a = a
         self.b = b
 
-if __name__ =='__main__':
+
+if __name__ == "__main__":
     tcs = int(input())
 
     for _ in range(tcs):
-        n=int(input())
+        n = int(input())
 
-        arr=[int(x) for x in input().split()]
+        arr = [int(x) for x in input().split()]
 
-        Parr=[]
+        Parr = []
 
-        i=0
-        while n*2>i:
+        i = 0
+        while n * 2 > i:
+            Parr.append(Pair(arr[i], arr[i + 1]))
 
-            Parr.append(Pair(arr[i],arr[i+1]))
+            i += 2
 
-            i+=2
-
-        #print(Parr,len(Parr))
-        obj=Solution()
+        # print(Parr,len(Parr))
+        obj = Solution()
         print(obj.maxChainLen(Parr, n))
 # } Driver Code Ends

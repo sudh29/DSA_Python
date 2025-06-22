@@ -1,23 +1,23 @@
-def merge(r1,r2):
-    dummy=Node(0)
-    curr=dummy
+def merge(r1, r2):
+    dummy = Node(0)
+    curr = dummy
     while r1 and r2:
-        if r1.data<r2.data:
-            curr.bottom=r1
-            curr=curr.bottom
-            r1=r1.bottom
+        if r1.data < r2.data:
+            curr.bottom = r1
+            curr = curr.bottom
+            r1 = r1.bottom
         else:
-            curr.bottom=r2
-            curr=curr.bottom
-            r2=r2.bottom
+            curr.bottom = r2
+            curr = curr.bottom
+            r2 = r2.bottom
     if r1:
-        curr.bottom=r1
+        curr.bottom = r1
     if r2:
-        curr.bottom=r2
+        curr.bottom = r2
     return dummy.bottom
 
+
 def flatten(root):
-    
     # temp=[]
     # curr=root
     # while curr:
@@ -40,9 +40,9 @@ def flatten(root):
     #         prev.bottom=temp
     #         prev=prev.bottom
     # return root
-    r1=root
-    r2=root.next
+    r1 = root
+    r2 = root.next
     while r2:
-        r1=merge(r1,r2)
-        r2=r2.next
+        r1 = merge(r1, r2)
+        r2 = r2.next
     return r1

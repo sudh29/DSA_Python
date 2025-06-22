@@ -1,21 +1,23 @@
 def isParenthesis(c):
-    return ((c == '(') or (c == ')')) 
- 
+    return (c == "(") or (c == ")")
+
+
 def isValidString(str):
     cnt = 0
     for i in range(len(str)):
-        if (str[i] == '('):
+        if str[i] == "(":
             cnt += 1
-        elif (str[i] == ')'):
+        elif str[i] == ")":
             cnt -= 1
-        if (cnt < 0):
+        if cnt < 0:
             return False
-    return (cnt == 0)
+    return cnt == 0
+
 
 class Solution:
     def removeInvalidParentheses(self, str: str) -> List[str]:
         res = []
-        if (len(str) == 0):
+        if len(str) == 0:
             return
 
         visit = set()
@@ -24,18 +26,18 @@ class Solution:
         level = 0
         q.append(str)
         visit.add(str)
-        while(len(q)):
+        while len(q):
             str = q[0]
             q.pop(0)
-            if (isValidString(str)):
+            if isValidString(str):
                 res.append(str)
                 level = True
-            if (level):
+            if level:
                 continue
             for i in range(len(str)):
-                if (not isParenthesis(str[i])):
+                if not isParenthesis(str[i]):
                     continue
-                temp = str[0:i] + str[i + 1:] 
+                temp = str[0:i] + str[i + 1 :]
                 if temp not in visit:
                     q.append(temp)
                     visit.add(temp)

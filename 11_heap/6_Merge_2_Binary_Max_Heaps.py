@@ -1,5 +1,5 @@
-#User function Template for python3
-import heapq
+# User function Template for python3
+
 
 def heapify(arr, n, i):
     largest = i
@@ -14,12 +14,14 @@ def heapify(arr, n, i):
         arr[i], arr[largest] = arr[largest], arr[i]
         heapify(arr, n, largest)
 
+
 def build_max_heap(arr):
     n = len(arr)
     for i in range(n // 2 - 1, -1, -1):
         heapify(arr, n, i)
-        
-class Solution():
+
+
+class Solution:
     def mergeHeaps(self, a, b, n, m):
         # max_heap = []
         # i,j=0,0
@@ -36,30 +38,33 @@ class Solution():
         # while j<m:
         #     heapq.heappush(max_heap,b[j])
         #     j+=1
-        # heapq._heapify_max(max_heap) 
+        # heapq._heapify_max(max_heap)
         # return max_heap
-        
+
         merged_heap = a + b
         build_max_heap(merged_heap)
         return merged_heap
-        
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
+
+
+# {
+# Driver Code Starts
+# Initial Template for Python 3
+
 
 def isMerged(arr1, arr2, merged):
-    if (len(arr1) + len(arr2) != len(merged)):
+    if len(arr1) + len(arr2) != len(merged):
         return False
     arr1 += arr2
     arr1.sort()
     mergedCopy = sorted(merged)
-    if (arr1 != mergedCopy):
+    if arr1 != mergedCopy:
         return False
     for i in range(1, len(merged)):
-        if merged[i] > merged[(i-1)//2]:
+        if merged[i] > merged[(i - 1) // 2]:
             return False
 
     return True
+
 
 if __name__ == "__main__":
     for _ in range(int(input())):

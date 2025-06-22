@@ -1,4 +1,4 @@
-#User function Template for python3
+# User function Template for python3
 # Manacher’s Algorithm
 class Solution:
     def longestPalin(self, s):
@@ -28,14 +28,18 @@ class Solution:
         max_len, center_index = max((P[i], i) for i in range(1, n - 1))
 
         # Extract the longest palindromic substring
-        start = (center_index - max_len) // 2  # Convert index in T back to original string
-        return s[start: start + max_len]
+        start = (
+            center_index - max_len
+        ) // 2  # Convert index in T back to original string
+        return s[start : start + max_len]
+
 
 def helper(s, left, right):
     while (left >= 0 and right < len(s)) and s[left] == s[right]:
         left -= 1
         right += 1
     return s[left + 1 : right]
+
 
 class Solution:
     def longestPalin(self, s):
@@ -51,12 +55,11 @@ class Solution:
         return res if len(res) > 1 else s[0]
 
 
-#{ 
- # Driver Code Starts
-#Initial Template for Python 3
+# {
+# Driver Code Starts
+# Initial Template for Python 3
 
-if __name__ == '__main__':
-
+if __name__ == "__main__":
     t = int(input())
 
     for _ in range(t):

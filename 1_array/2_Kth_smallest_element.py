@@ -1,16 +1,18 @@
 class Solution:
-    def kthSmallest(self,arr, l, r, k):
-        '''
+    def kthSmallest(self, arr, l, r, k):
+        """
         arr : given array
         l : starting index of the array i.e 0
         r : ending index of the array i.e size-1
         k : find kth smallest element and return using this function
-        '''
+        """
         arr.sort()
-        return arr[k-1] if len(arr)>=k else -1
-    
+        return arr[k - 1] if len(arr) >= k else -1
+
+
 # Quickselect sort
 import random
+
 
 def quickselect(arr, k):
     left = 0
@@ -24,6 +26,7 @@ def quickselect(arr, k):
             right = new_pivot_idx - 1
         else:
             left = new_pivot_idx + 1
+
 
 def partition(arr, left, right, pivot_idx):
     pivot_val = arr[pivot_idx]

@@ -23,7 +23,7 @@ class Solution:
                 dp[i][j] = sum(dp[i-1][k] for k in moves[j])
         return sum(dp[n][j] for j in range(10))
 
-#{ 
+#{
  # Driver Code Starts
 #Initial Template for Python 3
 

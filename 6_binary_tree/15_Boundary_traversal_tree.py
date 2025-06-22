@@ -1,4 +1,4 @@
-def printLeftBoundary(root,res):
+def printLeftBoundary(root, res):
     curr = root.left
     while curr:
         if not isleaf(curr):
@@ -7,10 +7,11 @@ def printLeftBoundary(root,res):
             curr = curr.left
         else:
             curr = curr.right
- 
-def printRightBoundary(root,res):
+
+
+def printRightBoundary(root, res):
     curr = root.right
-    st=[]
+    st = []
     while curr:
         if not isleaf(curr):
             st.append(curr.data)
@@ -19,35 +20,40 @@ def printRightBoundary(root,res):
         else:
             curr = curr.left
     res.extend(reversed(st))
- 
-def printLeaves(root,res):
+
+
+def printLeaves(root, res):
     if isleaf(root):
         res.append(root.data)
     if root.left:
         printLeaves(root.left, res)
     if root.right:
         printLeaves(root.right, res)
-        
+
+
 def isleaf(root):
     return not root.left and not root.right
 
-'''
+
+"""
 class Node:
     def __init__(self, val):
         self.right = None
         self.data = val
         self.left = None
-'''
+"""
+
+
 class Solution:
     def printBoundaryView(self, root):
         if not root:
             return res
-        res=[]
+        res = []
         if not isleaf(root):
             res.append(root.data)
-        
-        printLeftBoundary(root,res)
-        printLeaves(root,res)
-        printRightBoundary(root,res)
-        
+
+        printLeftBoundary(root, res)
+        printLeaves(root, res)
+        printRightBoundary(root, res)
+
         return res

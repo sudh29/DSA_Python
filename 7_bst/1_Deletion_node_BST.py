@@ -11,13 +11,13 @@ class Solution:
             while current.left:
                 current = current.left
             return current
-        
+
         if root is None:
             return root
         elif root.val > key:
-            root.left = self.deleteNode(root.left,key)
+            root.left = self.deleteNode(root.left, key)
         elif root.val < key:
-            root.right = self.deleteNode(root.right,key)
+            root.right = self.deleteNode(root.right, key)
         else:
             if root.left is None and root.right is None:
                 return None
@@ -28,5 +28,5 @@ class Solution:
             else:
                 min_val_node = minValueNode(root.right)
                 root.val = min_val_node.val
-                root.right = self.deleteNode(root.right,min_val_node.val)
+                root.right = self.deleteNode(root.right, min_val_node.val)
         return root
